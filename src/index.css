@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* these styles are given to elements of Registration inside page folder */
+.overlay {
+  position: absolute;
+  top: 7;
+  margin: auto;
+  /* left: 7; */
+  width: 93%;
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content {
+  text-align: center;
+}
