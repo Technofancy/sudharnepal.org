@@ -2,43 +2,43 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import image from "../assets/logo/sudharNepal_logo.png";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaEnvelope } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 const data = [
   {
     name: "भक्तराज राई",
     post: "सचिव",
     organization: "सुधार नेपाल",
-    number: "९७६७३९३५५१",
+    number: "९८५२०५६०५४",
     image: image,
   },
   {
     name: "भिमकुमार राई",
     post: "सचिव",
     organization: "सुधार नेपाल",
-    number: "९८५२०५६०५४",
+    number: "९७६७३९३५५१",
     image: image,
   },
 ];
 
 const Contact = () => {
   return (
-    <div className="h-screen flex flex-col bg-pink-50">
+    <div className="h-screen flex flex-col bg-neutral">
       <Navbar />
       <div className="flex-grow">
         <div className="container mx-auto py-8">
-          <h2 className="text-2xl font-bold mb-4 text-pink-900">
+          <h2 className="text-2xl font-bold mb-4 text-primary">
             हाम्रो सम्पर्क
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {data.map((item, index) => (
-              <div key={index} className="bg-pink-100 rounded-lg shadow-md p-4">
+              <div key={index} className="bg-tertiary rounded-lg shadow-md p-4">
                 <img
                   src={item.image}
                   alt={item.name}
                   className="w-full h-48 object-cover mb-4"
                 />
-                <h2 className="text-lg font-bold mb-2 text-pink-900">
+                <h2 className="text-lg font-bold mb-2 text-primary">
                   {item.name}
                 </h2>
                 <p className="text-gray-600 mb-2">{item.post}</p>
@@ -50,7 +50,7 @@ const Contact = () => {
             ))}
           </div>
           <div className="mt-8">
-            <h3 className="text-xl font-bold mb-2 text-pink-900">
+            <h3 className="text-xl font-bold mb-2 text-primary">
               सामाजिक सञ्जाल:
             </h3>
             <div className="flex gap-4 flex-wrap">
@@ -65,10 +65,20 @@ const Contact = () => {
                 <span>सुधार नेपाल (page)</span>
               </Link>
               <Link
-                to="mailto:refnep3654@gmail.com"
+                to="https://youtube.com/channel/UCYcl7A3Mqj2DzfSARZuExSw?si=Soq34wofPxL_O8qP"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red-600 hover:text-red-500"
+                aria-label="Youtube"
+              >
+                <FaYoutube className="text-2xl" />
+                <span>सुधार नेपाल (Reform Nepal)</span>
+              </Link>
+              <Link
+                to="mailto:refnep3654@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-500"
                 aria-label="Email"
               >
                 <FaEnvelope className="text-2xl" />

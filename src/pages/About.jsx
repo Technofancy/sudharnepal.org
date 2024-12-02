@@ -106,30 +106,30 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto p-4 mt-10 bg-pink-100">
-        <h1 className="text-3xl font-bold mb-4 text-pink-900">हाम्रो बारेमा</h1>
+      <div className="container mx-auto p-4 mt-10 bg-neutral">
+        <h1 className="text-3xl font-bold mb-4 text-primary">हाम्रो बारेमा</h1>
         <div className="bg-white rounded shadow-md p-4 mb-8">
-          <h2 className="text-2xl font-bold mb-2 text-pink-900">
+          <h2 className="text-2xl font-bold mb-2 text-primary">
             संस्थागत जानकारी :
           </h2>
           <hr />
           <br />
           <div className="flex flex-col md:flex-row justify-between mb-4">
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
-              <h3 className="text-xl font-bold mb-2 text-pink-900">
+              <h3 className="text-xl font-bold mb-2 text-primary">
                 सुधार नेपाल
               </h3>
               {/* <p className="text-gray-600">Sudhar Nepal</p> */}
             </div>
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
-              <h3 className="text-xl font-bold mb-2 text-pink-900">
+              <h3 className="text-xl font-bold mb-2 text-primary">
                 धरान-८, भोटेपुल(बोनस मल), सुनसरी
               </h3>
               {/* <p className="text-gray-600">nepal</p> */}
             </div>
           </div>
           <div className="mb-4">
-            <h3 className="text-xl font-bold mb-2 text-pink-900">
+            <h3 className="text-xl font-bold mb-2 text-primary">
               चौतर्फी सुधार, हाम्रो आधार
             </h3>
             <p className="text-gray-600">
@@ -142,7 +142,7 @@ const About = () => {
             </p>
           </div>
           <div className="mb-4">
-            <h3 className="text-xl font-bold mb-2 text-pink-900">
+            <h3 className="text-xl font-bold mb-2 text-primary">
               कार्यक्रम उद्देश्य :
             </h3>
             <ul className="list-disc list-inside text-gray-600">
@@ -162,14 +162,14 @@ const About = () => {
           {postHandlers.map((postHandler) => (
             <div
               key={postHandler.id}
-              className="bg-white rounded shadow-md p-4 hover:shadow-lg transition duration-300 border border-pink-200"
+              className="bg-white rounded shadow-md p-4 hover:shadow-lg transition duration-300 border border-tertiary"
             >
               <img
                 src={postHandler.image}
                 alt={postHandler.name}
                 className="w-20 h-20 rounded-full mb-4 mx-auto"
               />
-              <h2 className="text-xl font-bold mb-2 text-pink-900">
+              <h2 className="text-xl font-bold mb-2 text-primary">
                 {postHandler.name}
               </h2>
               <p className="text-gray-600">{postHandler.position}</p>
@@ -179,28 +179,28 @@ const About = () => {
             </div>
           ))}
         </div>
-        <h2 className="text-2xl font-bold mt-8 mb-4 text-pink-900">
+        <h2 className="text-2xl font-bold mt-8 mb-4 text-primary">
           सदस्यहरु :
         </h2>
         <div className="overflow-x-auto">
-          <table className="table-auto w-full bg-white rounded shadow-md p-4 border border-pink-200">
-            <thead className="bg-pink-200">
+          <table className="table-auto w-full bg-white rounded shadow-md p-4 border border-tertiary">
+            <thead className="bg-tertiary">
               <tr>
-                <th className="px-1 py-2 text-pink-900">क्र.स.</th>
-                <th className="px-4 py-2 text-pink-900">नाम (अक्षर क्रम)</th>
-                <th className="px-3 py-2 text-pink-900"></th>
+                <th className="px-1 py-2 text-primary">क्र.स.</th>
+                <th className="px-4 py-2 text-primary">नाम (अक्षर क्रम)</th>
+                <th className="px-3 py-2 text-primary"></th>
               </tr>
             </thead>
             <tbody>
               {members.map((member) => (
                 <tr key={member.id}>
-                  <td className="border border-pink-200 px-4 py-2">
+                  <td className="border border-tertiary px-4 py-2">
                     {member.id}
                   </td>
-                  <td className="border border-pink-200 px-4 py-2">
+                  <td className="border border-tertiary px-4 py-2">
                     {member.name}
                   </td>
-                  <td className="border border-pink-200 px-4 py-2">
+                  <td className="border border-tertiary px-4 py-2">
                     {member.position}
                   </td>
                 </tr>

@@ -9,15 +9,15 @@ const Registration = () => {
       <div className="container mt-5 mx-auto">
         <div className="row justify-content-center">
           <div className="col-md-6">
-            <h2 className="text-center mb-4 text-pink-900">
+            <h2 className="text-center mb-4 text-primary">
               <strong>फारम</strong>
             </h2>
             <hr />
             <br />
-            <div className="form-placeholder bg-pink-100 p-4 rounded-md shadow-md position-relative">
+            <div className="form-placeholder bg-tertiary p-4 rounded-md shadow-md position-relative">
               <div className="overlay">
                 <div className="overlay-content">
-                  <h3 className="text-center text-pink-900 mb-4">
+                  <h3 className="text-center text-primary mb-4">
                     हालकोलागि फारम निष्क्रिय छ, असुविधाको लागि क्षमा प्रार्थी
                     छोेँ ।
                   </h3>
@@ -29,7 +29,7 @@ const Registration = () => {
               <form>
                 <div className="mb-4">
                   <label
-                    className="block text-pink-900 text-sm font-bold mb-2"
+                    className="block text-primary text-sm font-bold mb-2"
                     htmlFor="name"
                   >
                     पुरा नाम
@@ -44,7 +44,7 @@ const Registration = () => {
                 </div>
                 <div className="mb-4">
                   <label
-                    className="block text-pink-900 text-sm font-bold mb-2"
+                    className="block text-primary text-sm font-bold mb-2"
                     htmlFor="email"
                   >
                     ठेगाना
@@ -59,7 +59,7 @@ const Registration = () => {
                 </div>
                 <div className="mb-4">
                   <label
-                    className="block text-pink-900 text-sm font-bold mb-2"
+                    className="block text-primary text-sm font-bold mb-2"
                     htmlFor="phone"
                   >
                     सम्पर्क अंक
@@ -79,9 +79,9 @@ const Registration = () => {
               alt="Sudhar Nepal Logo"
               className="img-fluid mt-4 mx-auto"
             />
-            <p className="text-center mt-4 text-pink-900">
+            <p className="text-center mt-4 text-primary">
               सोधपुछको लागि{" "}
-              <a href="/contact" className="text-pink-900 hover:text-pink-700">
+              <a href="/contact" className="text-primary hover:text-secondary">
                 सम्पर्क
               </a>
             </p>

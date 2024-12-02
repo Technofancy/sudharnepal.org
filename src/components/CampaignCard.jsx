@@ -29,21 +29,21 @@ const campaigns = [
 const CampaignCard = () => {
   return (
     <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12 xl:p-24">
-      <h1 className="text-center text-3xl font-bold mb-4 text-pink-900">
+      <h1 className="text-center text-3xl font-bold mb-4 text-primary">
         कार्यक्रमहरु
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {campaigns.map((campaign) => (
           <div
             key={campaign.id}
-            className="bg-pink-100 rounded-lg shadow-md p-4"
+            className="bg-neutral rounded-lg shadow-md p-4"
           >
             <img
               src={campaign.image}
               alt={campaign.title}
               className="w-full h-48 object-cover mb-4"
             />
-            <h2 className="text-lg font-bold mb-2 text-pink-900">
+            <h2 className="text-lg font-bold mb-2 text-primary">
               {campaign.title}
             </h2>
             <p className="text-gray-600 mb-2">{campaign.description}</p>
